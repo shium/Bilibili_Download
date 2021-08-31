@@ -9,7 +9,7 @@
         "player_api":"https://api.bilibili.com/x/player/playurl"
     },
     "downloader_shell":{
-        "name":"./aria2c"
+        "name":"aria2c"
     },
     "video_process":{},
     "qn":{
