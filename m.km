@@ -1,0 +1,142 @@
+{
+    "root": {
+        "data": {
+            "id": "cdxa85tbukw0",
+            "created": 1630370835067,
+            "text": "Bilibili_Download"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cdxa8vjule00",
+                    "created": 1630370891090,
+                    "text": "爬虫(Spider)"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdxabmp49tc0",
+                            "created": 1630371106911,
+                            "text": "配置文件(config.json)"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cdxfqb3aqx40",
+                                    "created": 1630386362659,
+                                    "text": "header"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdxfuc1z6600",
+                                    "created": 1630386678212,
+                                    "text": "清晰度(qn)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdxaco6iv4w0",
+                                    "created": 1630371188504,
+                                    "text": "api接口"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cdxfr4gblw80",
+                            "created": 1630386426573,
+                            "text": "Spider类",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cdxg82ifnns0",
+                                    "created": 1630387754539,
+                                    "text": "获取cid(get_cid)",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdxfv5gwfdc0",
+                                    "created": 1630386742241,
+                                    "text": "检查链接是否合法(check_url)"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cdxgn1t14gw0",
+                                    "created": 1630388928464,
+                                    "text": "获取视频下载链接(get_download_url)"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cdxhcggmsv40",
+                    "created": 1630390919470,
+                    "text": "读取配置文件(Set_Config)",
+                    "layout": null
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cdxa94d1zts0",
+                    "created": 1630370910271,
+                    "text": "下载(Downloader)"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdxac88b5400",
+                            "created": 1630371153783,
+                            "text": "配置文件(config.json)"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cdxgljhkq080",
+                            "created": 1630388810225,
+                            "text": "aria2"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cdxa9ewe3js0",
+                    "created": 1630370933208,
+                    "text": "视频处理(Video_Processing)"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdxacj6u3q80",
+                            "created": 1630371177639,
+                            "text": "配置文件(config.json)"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
