@@ -2,14 +2,14 @@ import requests
 import json
 
 #定位父文件夹位置
-import os, sys
-parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(parentdir)
+#import os, sys
+#parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#sys.path.append(parentdir)
 
-from Config.Set_Config import conf_json
+#from Config.Set_Config import conf_json
 
 class Spider(object):
-    def __init__(self, url):
+    def __init__(self, url, conf_json):
         #获取视频链接并提取BV号
         self.URL = self.check_url(url)
         tmp = [i for i in url.split('/') if i is not '']
@@ -49,5 +49,30 @@ class Spider(object):
 
 
 if __name__=="__main__":
-    t = Spider("https://www.bilibili.com/video/BV17p4y1D7dA")
+    conf = {
+    "header":{
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.51 Safari/537.36 Edg/93.0.961.27"
+    },
+    "spider":{
+        "//1":"?bvid=",
+        "//2":"?cid=(cid)&qn=(qn)&bvid=(bvid)",
+        "bv2detail_api":"https://api.bilibili.com/x/web-interface/view",
+        "player_api":"https://api.bilibili.com/x/player/playurl"
+    },
+    "downloader_shell":{
+        "name":"./aria2c"
+    },
+    "video_process":{},
+    "qn":{
+        "4K":120,
+        "1080p60":116,
+        "720p60":74,
+        "1080p+":112,
+        "1080p":80,
+        "720p":64,
+        "480p":32,
+        "360p":16
+    }
+}
+    t = Spider("https://www.bilibili.com/video/BV17p4y1D7dA",conf)
     print(t.bvid)
