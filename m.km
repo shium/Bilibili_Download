@@ -10,21 +10,24 @@
                 "data": {
                     "id": "cdxa8vjule00",
                     "created": 1630370891090,
-                    "text": "爬虫(Spider)"
+                    "text": "爬虫(Spider)",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "cdxabmp49tc0",
                             "created": 1630371106911,
-                            "text": "配置文件(config.json)"
+                            "text": "配置文件(config.json)",
+                            "layout": null
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cdxfqb3aqx40",
                                     "created": 1630386362659,
-                                    "text": "header"
+                                    "text": "header",
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -32,7 +35,8 @@
                                 "data": {
                                     "id": "cdxfuc1z6600",
                                     "created": 1630386678212,
-                                    "text": "清晰度(qn)"
+                                    "text": "清晰度(qn)",
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -40,7 +44,8 @@
                                 "data": {
                                     "id": "cdxaco6iv4w0",
                                     "created": 1630371188504,
-                                    "text": "api接口"
+                                    "text": "api接口",
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -51,7 +56,8 @@
                             "id": "cdxfr4gblw80",
                             "created": 1630386426573,
                             "text": "Spider类",
-                            "expandState": "expand"
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": [
                             {
@@ -59,7 +65,8 @@
                                     "id": "cdxg82ifnns0",
                                     "created": 1630387754539,
                                     "text": "获取cid(get_cid)",
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -67,7 +74,8 @@
                                 "data": {
                                     "id": "cdxfv5gwfdc0",
                                     "created": 1630386742241,
-                                    "text": "检查链接是否合法(check_url)"
+                                    "text": "检查链接是否合法(check_url)",
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -75,11 +83,40 @@
                                 "data": {
                                     "id": "cdxgn1t14gw0",
                                     "created": 1630388928464,
-                                    "text": "获取视频下载链接(get_download_url)"
+                                    "text": "获取视频下载链接(get_download_url)",
+                                    "layout": null
                                 },
                                 "children": []
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cdy59kdazs00",
+                    "created": 1630458399521,
+                    "text": "主函数(main.py)",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cdy59xsjnlc0",
+                            "created": 1630458428741,
+                            "text": "获取配置文件",
+                            "layout": null
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cdy5a8wduk00",
+                            "created": 1630458452918,
+                            "text": "启动主程序(main)",
+                            "layout": null
+                        },
+                        "children": []
                     }
                 ]
             },
@@ -96,14 +133,16 @@
                 "data": {
                     "id": "cdxa94d1zts0",
                     "created": 1630370910271,
-                    "text": "下载(Downloader)"
+                    "text": "下载(Downloader)",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "cdxac88b5400",
                             "created": 1630371153783,
-                            "text": "配置文件(config.json)"
+                            "text": "配置文件(config.json)",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -111,7 +150,8 @@
                         "data": {
                             "id": "cdxgljhkq080",
                             "created": 1630388810225,
-                            "text": "aria2"
+                            "text": "aria2",
+                            "layout": null
                         },
                         "children": []
                     }
@@ -121,14 +161,16 @@
                 "data": {
                     "id": "cdxa9ewe3js0",
                     "created": 1630370933208,
-                    "text": "视频处理(Video_Processing)"
+                    "text": "视频处理(Video_Processing)",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "cdxacj6u3q80",
                             "created": 1630371177639,
-                            "text": "配置文件(config.json)"
+                            "text": "配置文件(config.json)",
+                            "layout": null
                         },
                         "children": []
                     }
