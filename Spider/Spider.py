@@ -1,13 +1,6 @@
 import requests
 import json
 
-#定位父文件夹位置
-#import os, sys
-#parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#sys.path.append(parentdir)
-
-#from Config.Set_Config import conf_json
-
 class Spider(object):
     def __init__(self, url, conf_json):
         #获取视频链接并提取BV号
