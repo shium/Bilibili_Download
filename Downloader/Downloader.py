@@ -6,22 +6,31 @@ class Downloader(object):
         self.download_url = download_url
         self.shell = shell
 
-        self.check()
+        if not self.check():
+            raise EnvironmentError('未安装aria2')
 
     #检查系统内是否安装aria2
     def check(self):
-        if self.shell == 'aria2c':
-            #判断是否存在此程序
-            #flag = False 时存在
-            #flag = True 时不存在
-            flag = bool(os.system(shell + ' --version'))
-            if flag:
-                #shell 不存在
-                return False
+        Aria2c_Exist = False
+
+        #检查当前目录中是否存在aria2
+        if os.path.isfile('aria2c'):
+            Aria2c_Exist = True
+            return Aria2c_Exist
+
+        PATH = os.environ['PATH'].split(os.pathsep)
+        for p in PATH:
+            Aria2c_PATH = os.path.join(p, 'aria2c')
+            if os.path.isfile(Aria2c_PATH):
+                print('系统已安装aria')
+                Aria2c_Exist = True
+                return Aria2c_Exist
+
+        return Aria2c_Exist
 
     #下载
     def downloader(self):
-        command = '{0} {1} --referer={2}'.format(self.shell, self.download_url, self.original_url)
+        command = '{0} "{1}" --referer={2}'.format(self.shell, self.download_url, self.original_url)
         os.system(command)
 
 if __name__ == '__main__':
